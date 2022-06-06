@@ -1,0 +1,392 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed');
+ 
+ a:hover {
+    color: #ff6600;
+  }
+  .waiting_wrapper .waiting_item .waiting_button:hover{
+      border-color: #ffffff;
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #1a1a1a; 
+}
+
+div{
+    display: block;
+}
+
+a{
+    color:#ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    
+}
+/* _________________________Шапка_______________________ */
+
+.head{
+    display: block;
+    background-color: #1a1a1a;
+    position: relative;
+    padding: 18px 0; 
+    border-color: #313131;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    width: 100%;
+    }
+
+    .head_fixed{
+        position:fixed;
+        left: 0;
+        top: 0;
+        z-index: 5;
+    }
+
+.head .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__phone{
+    margin: -5px 0;
+}
+
+.head img{
+    width: 350px;
+    height: 71px;
+}
+
+.header__contacts{
+    color: #ffffff;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.875rem;
+    margin: 0 100px 0 auto;
+    padding: 0;
+}
+
+.menu__font{
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    list-style: none;
+}
+.nav__item{
+    display:inline;
+}
+
+.button__menu{
+    padding: 0 15px;
+}
+
+/* ________________________первая секция_______________________________ */
+
+.promo {
+    height: 700px;
+    background: url('../images/repair-man-making-car-service.jpg') center center/cover no-repeat;
+}
+
+.slogan{
+    color: #ff6600;
+    font-family: 'Roboto',sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 100px 100px 0 0;
+}
+
+.waiting_wrapper{
+    margin-top: 135px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.waiting_wrapper .waiting_item{
+    width: 360px;
+    background-color: #1a1a1ae0;
+    text-align: center;
+    padding: 25px 21px;
+}
+
+.waiting_wrapper .waiting_item .waiting_heading{
+    color: #ff6600;
+    font-family:'Roboto Condensed', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.waiting_wrapper .waiting_item .waiting_text{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 10px 9px 0;
+}
+
+.waiting_wrapper .waiting_item .waiting_button{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.875rem;
+    padding: 10px 106px 11px 105px;
+    margin: 26px auto 0;
+    border-color: #ff6600;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* _________________________Слайдер_______________________ */
+
+
+.carousel__inner{
+    position: relative;
+    width: 100%;
+}
+
+.slide__container{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background-color: #1a1a1ae0;
+    text-align: center;
+    padding: 30px 20px;
+    
+}
+
+.slide1{
+    background: url('../images/mechanic-changing-engine-oil-car-vehicle.jpg') center center/cover no-repeat;
+}
+
+.slide2{
+    background: url('../images/1-12-800x500.jpg') center center/cover no-repeat;
+}
+
+.slide3{
+    background: url('../images/muscular-car-service-worker-repairing-vehicle1.jpg') center center/cover no-repeat;
+}
+
+
+.slide3 .slide__container{
+    padding: 90px 20px;
+}
+
+.slide__heading{
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #ff6600;
+    line-height: normal;
+    
+}
+
+.slide__text{
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif !important;
+    margin: 20px auto 0;
+    line-height: 1.6;
+}
+
+.slide1 .slide__container .slide__text{
+    margin: 30px 110px 10px;
+}
+
+.slide2 .slide__container .slide__text{
+    margin: 20px 140px 10px;
+}
+
+.slide3 .slide__heading{
+    margin: 0;
+}
+
+.slick-prev, .slick-next{
+    position:absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slick-next{
+right: 0px;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 1%;
+    transform: translateX(-50%);
+}
+
+li::marker{
+    content: "";
+}
+
+#slick-slide-control00, #slick-slide-control01, #slick-slide-control02{
+    background: #808080;
+    width: 30px;
+    height: 3px;
+    margin: 0 3px;
+    z-index: 1;
+    font-size: 0;
+    border: none;
+}
+
+/* _________________________Вторая секция_______________________ */
+
+.advantages{
+    background: url('../images/repair-man-making-car-service2.jpg') center center/cover no-repeat;
+    min-height: 800px;
+}
+    
+.item__container{
+    padding: 30px;
+}
+
+.items{
+    display: flex; 
+    flex-direction: column;
+    margin: 20px 0 0;
+}
+
+.advantages__items{
+    display: grid;
+    grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
+    grid-gap: 16px 15px;
+}
+
+h2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 4.5rem;
+    margin: 61px 0 0;
+    text-align: center;
+    font-weight: 700;
+    color: #ff6600;
+}
+
+h3, p{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    margin: 20px 20px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.png{
+    margin: 0 auto;
+    display: block;
+}
+
+/* _________________________Карта_______________________ */
+
+.map__items{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.map__location{
+    position: relative;
+   }
+
+.map__info{
+    padding: 80px 20px;
+    background-color: #1a1a1ae0;
+    position: absolute;
+    width: 350px;
+    min-height: 400px;
+    top: 0;
+    right: 0;
+}
+
+h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.875rem;
+    text-align: center;
+    color: #ff6600;
+    font-weight: 700;
+    line-height: 1.2;
+}
+    
+.timetable{
+    margin: 24px 0 0;
+}  
+
+.map__txt, .map__address{
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0 0;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.map__address{
+    margin: 0;
+}
+
+.container__info{
+    position: absolute;
+    top: 0;
+    width: 1140px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+/* _________________________Подвал_______________________ */
+
+
+footer{
+    background-color: #333333;
+    height: 120px;
+    padding: 35px;
+}
+
+footer .container{
+    display: flex;
+    
+}
+
+footer img{
+    width: 245px;
+    height: 50px;
+}
+
+footer p{
+    font-family: 'Open Sans',sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+
+footer .icon{
+    height: 50px;
+    width: 50px;
+}
